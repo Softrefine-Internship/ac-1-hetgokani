@@ -38,14 +38,14 @@ html {
   font-size: 1.8rem;
 }
 .projects_status_info__des {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: grey;
   margin: 0.5rem 0 0 0;
 }
 .projects_status_info__bullet {
-  width: 1rem;
-  height: 1rem;
-  margin: 0.7rem 0 0 2.3rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0.7rem 2.5rem 0 2.3rem;
 }
 
 .header {
@@ -202,6 +202,7 @@ body {
 .projects_status__cards {
   align-items: center;
   display: flex;
+  margin: 0 0 0 0;
 }
 
 .project_info_flex {
