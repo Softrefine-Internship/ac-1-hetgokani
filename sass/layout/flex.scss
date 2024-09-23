@@ -1,0 +1,31 @@
+.header__loginarea {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.icon__column__flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0 0 0;
+  &--icons {
+    color: black;
+    width: 2.8rem;
+    height: 2.8rem;
+    padding: 1rem;
+
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
+    &:first-child {
+      background-color: black;
+      color: $color-white;
+    }
+    &:hover {
+      color: $color-white;
+      cursor: pointer;
+      background-color: black;
+    }
+  }
+}

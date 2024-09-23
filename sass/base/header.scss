@@ -1,0 +1,114 @@
+.header {
+  margin: 2rem 3rem 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    color: black;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: rotate(-90deg);
+      cursor: pointer;
+    }
+  }
+  &__title {
+    font-size: 3rem;
+
+    font-weight: 700;
+    margin: 0 0 0 -23rem;
+  }
+  &__search {
+    position: relative;
+    margin: 0 0 0 -25rem;
+  }
+  &__searchbar {
+    outline: none;
+    height: 2rem;
+    border: none;
+    border-radius: 3rem;
+    padding: 2rem 3.5rem;
+    width: 30rem;
+    appearance: auto;
+
+    &:focus {
+      border: none;
+      appearance: auto;
+    }
+  }
+  &__searchicon {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+
+    width: 2rem;
+    height: 2rem;
+    color: black;
+  }
+  &__loginarea {
+    &--plusicon {
+      width: 1.8rem;
+      stroke: white;
+      height: 1.8rem;
+      color: white;
+      background-color: black;
+      border-radius: 50%;
+      padding: 0.7rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+    &--bellicon {
+      width: 3rem;
+      height: 3rem;
+      padding: 0.7rem;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: rotate(-15deg);
+        cursor: pointer;
+      }
+    }
+    &__bellsection {
+      position: relative;
+    }
+    &--notificationdot {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: $color-red;
+      position: absolute;
+      top: 22%;
+      left: 52%;
+      border-radius: 50%;
+    }
+    &__break {
+      width: 0.1rem;
+      height: 3rem;
+      background-color: $color-grey;
+    }
+    &__userimage {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      margin: 0 0 0 1.5rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+    &__username {
+      font-size: 2rem;
+      margin: 0 0 0 0.5rem;
+    }
+  }
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
