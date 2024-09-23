@@ -12,26 +12,32 @@ html {
 .background__container {
   width: 100vw;
   height: 100vh;
-  background-color: #e9e7fd;
+  background-color: #f3f6fd;
 }
 
 .main__container {
   position: absolute;
-  width: 90vw;
-  height: 90vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
   background-color: #f3f6fd;
-  border-radius: 3.5rem;
   overflow: hidden;
 }
 
 .title__name {
   font-size: 2.3rem;
+  transition: all 0.5 ease;
+}
+.title__name:hover {
+  transform: skew(-10deg);
+  cursor: pointer;
 }
 .title__date {
   font-size: 1.5rem;
+  transition: all 0.5 ease;
+}
+.title__date:hover {
+  transform: skew(-10deg);
+  cursor: pointer;
 }
 
 .projects_status_info__numbers {
@@ -58,10 +64,12 @@ html {
   width: 4rem;
   height: 4rem;
   color: black;
+  margin: 0 0 0 0.7rem;
   transition: all 0.3s ease;
 }
 .header__icon:hover {
   transform: rotate(-90deg);
+  color: red;
   cursor: pointer;
 }
 .header__title {
@@ -107,6 +115,7 @@ html {
 .header__loginarea--plusicon:hover {
   transform: scale(1.1);
   cursor: pointer;
+  color: yellow;
 }
 .header__loginarea--bellicon {
   width: 3rem;
@@ -117,6 +126,7 @@ html {
 .header__loginarea--bellicon:hover {
   transform: rotate(-15deg);
   cursor: pointer;
+  color: rgb(21, 102, 0);
 }
 .header__loginarea__bellsection {
   position: relative;
@@ -154,6 +164,74 @@ html {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+}
+
+.icon_profile_flex--icon {
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.3s ease;
+}
+.icon_profile_flex--icon:hover {
+  transform: rotate(-90deg) scale(1.2);
+  color: red;
+  cursor: pointer;
+}
+.icon_profile_flex--icon--lines {
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.3s ease;
+}
+.icon_profile_flex--icon--lines:hover {
+  transform: rotate(-90deg) scale(1.2);
+  color: rgb(255, 0, 191);
+  cursor: pointer;
+}
+
+.cards_flex--card1,
+.cards_flex--card2,
+.cards_flex--card3,
+.cards_flex--card4,
+.cards_flex--card5,
+.cards_flex--card6,
+.cards_flex--card7,
+.cards_flex--card8 {
+  margin: 2.4rem 0 0 0;
+  width: 25rem;
+  height: 23rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15%;
+}
+
+.cards_flex--card1 {
+  background-color: #ffffff;
+}
+
+.cards_flex--card2 {
+  background-color: #fde5cc;
+}
+
+.cards_flex--card3 {
+  background-color: #b4f1ce;
+}
+
+.cards_flex--card4 {
+  background-color: #ffd3e2;
+}
+
+.cards_flex--card5 {
+  background-color: #edcdf8;
+}
+
+.cards_flex--card6 {
+  background-color: #fde5cc;
+}
+
+.cards_flex--card7 {
+  background-color: #b4f1ce;
+}
+
+.cards_flex--card8 {
+  background-color: #ffffff;
 }
 
 .header__loginarea {
@@ -210,6 +288,19 @@ body {
   align-items: center;
 }
 
+.icon_profile_flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cards_flex {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  margin: 0 0 5rem 10rem;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 8% 57% 35%;
@@ -224,8 +315,8 @@ body {
 .usercard__column {
   background-color: #ffffff;
   border-radius: 4.3rem;
-  height: 50rem;
-  overflow: auto;
+  height: 100vh;
+  overflow: hidden;
 }
 .usercard__column__area {
   margin: 3.7rem 4.3rem;
@@ -235,6 +326,21 @@ body {
   background-color: #f3f6fd;
   overflow: auto;
   height: 50rem;
+}
+
+.SCROLLABLE-FIX {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  padding: 0 0 8rem 0;
+}
+
+.progress {
+  overflow-y: auto;
+  margin-top: -2rem;
+}
+.progress::-webkit-scrollbar {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

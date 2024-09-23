@@ -1,0 +1,38 @@
+.cards_flex--card1,
+.cards_flex--card2,
+.cards_flex--card3,
+.cards_flex--card4,
+.cards_flex--card5,
+.cards_flex--card6,
+.cards_flex--card7,
+.cards_flex--card8 {
+  margin: 2.4rem 0 0 0;
+  width: 25rem;
+  height: 23rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15%;
+}
+.cards_flex--card1 {
+  background-color: $color-white;
+}
+.cards_flex--card2 {
+  background-color: $color-card-orange;
+}
+.cards_flex--card3 {
+  background-color: $color-card-green;
+}
+.cards_flex--card4 {
+  background-color: $color-card-pink;
+}
+.cards_flex--card5 {
+  background-color: $color-card-purple;
+}
+.cards_flex--card6 {
+  background-color: $color-card-orange;
+}
+.cards_flex--card7 {
+  background-color: $color-card-green;
+}
+.cards_flex--card8 {
+  background-color: $color-white;
+}

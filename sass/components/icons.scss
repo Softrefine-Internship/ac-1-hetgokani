@@ -1,0 +1,25 @@
+.icon_profile_flex {
+  &--icon {
+    width: 2rem;
+    height: 2rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: rotate(-90deg) scale(1.2);
+      color: red;
+      cursor: pointer;
+    }
+
+    &--lines {
+      width: 3rem;
+      height: 3rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: rotate(-90deg) scale(1.2);
+        color: rgb(255, 0, 191);
+        cursor: pointer;
+      }
+    }
+  }
+}

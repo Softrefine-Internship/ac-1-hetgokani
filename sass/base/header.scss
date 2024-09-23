@@ -8,9 +8,11 @@
     width: 4rem;
     height: 4rem;
     color: black;
+    margin: 0 0 0 0.7rem;
     transition: all 0.3s ease;
     &:hover {
       transform: rotate(-90deg);
+      color: red;
       cursor: pointer;
     }
   }
@@ -61,6 +63,7 @@
       &:hover {
         transform: scale(1.1);
         cursor: pointer;
+        color: yellow;
       }
     }
     &--bellicon {
@@ -71,6 +74,7 @@
       &:hover {
         transform: rotate(-15deg);
         cursor: pointer;
+        color: rgb(21, 102, 0);
       }
     }
     &__bellsection {
