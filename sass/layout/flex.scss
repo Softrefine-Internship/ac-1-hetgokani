@@ -61,3 +61,52 @@
   gap: 7rem;
   margin: 0 0 5rem 10rem;
 }
+.image_button_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &--plusicon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-progressbar-cyan;
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  }
+  &--button {
+    color: $color-progressbar-cyan;
+    background-color: rgba(86, 217, 240, 0.212);
+    font-family: "Roboto", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    padding: 0.5rem 1.3rem;
+    border-radius: 1.5rem;
+    border: none;
+    &:hover {
+      background-color: rgb(238, 234, 234);
+      cursor: pointer;
+    }
+  }
+  &--image {
+    display: flex;
+    align-items: center;
+
+    &--size:first-child {
+      margin: 0 0 0 0;
+    }
+    &--size {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      margin: 0 0 0 -0.8rem;
+      border: 1px solid white;
+      transition: all 0.3 ease;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        filter: contrast(1.5);
+      }
+    }
+  }
+}

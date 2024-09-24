@@ -54,6 +54,23 @@ html {
   margin: 0.7rem 2.5rem 0 2.3rem;
 }
 
+.card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__info--date {
+  font-size: 1.4rem;
+  color: grey;
+  font-weight: 600;
+}
+.card__info--icon {
+  width: 2rem;
+  height: 1.5rem;
+  color: black;
+  fill: black;
+}
+
 .header {
   margin: 2rem 3rem 2rem 3rem;
   display: flex;
@@ -187,6 +204,20 @@ body {
   cursor: pointer;
 }
 
+.two__vertical__dots {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.dot {
+  background-color: black;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+}
+
 .cards_flex--card1,
 .cards_flex--card2,
 .cards_flex--card3,
@@ -195,7 +226,7 @@ body {
 .cards_flex--card6,
 .cards_flex--card7,
 .cards_flex--card8 {
-  margin: 2.4rem 0 0 0;
+  margin: 2.4rem 0 -2rem 0;
   width: 25rem;
   height: 23rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -210,16 +241,665 @@ body {
   background-color: #fde5cc;
 }
 
+.card2 {
+  padding: 2rem 1.8rem;
+  position: relative;
+}
+.card2:hover {
+  cursor: pointer;
+}
+.card2::before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 0.3rem;
+  bottom: -1.3rem;
+  border-radius: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0 ease-in-out;
+  background-color: #eb9d4a;
+  transform: translate(-50%, -50%);
+}
+.card2::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 0.3rem;
+  background-color: #eb9d4a;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0 ease-in-out;
+  margin: 0 0 0 2.6rem;
+  bottom: -2.3rem;
+  border-radius: 2rem;
+  transform: translate(-50%, -50%);
+}
+.card2__title {
+  font-size: 1.7rem;
+  color: black;
+  text-align: center;
+  margin: 2rem 0 0 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+.card2__category {
+  font-size: 1.4rem;
+  color: grey;
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+.card2__progresstitle {
+  font-size: 1.3rem;
+  color: black;
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+.card2__progresspercentage {
+  font-size: 1.3rem;
+  color: black;
+  text-align: right;
+  margin: 0.5rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+.card2__divider {
+  width: 25rem;
+  height: 0.5px;
+  margin: 1rem -1.8rem 1.5rem -1.8rem;
+  background-color: rgb(255, 255, 255);
+}
+.card2__progressbar {
+  width: 100%;
+  height: 0.6rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card2__progressbar--progress {
+  height: 100%;
+  background-color: #eb9d4a;
+  border-radius: 0.5rem;
+}
+
+.card2:hover::before,
+.card2:hover::after {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  transform: translateY(0.2rem);
+}
+
+.card2__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card2__info--date {
+  font-size: 1.4rem;
+  color: grey;
+  font-weight: 600;
+}
+.card2__info--icon {
+  width: 2rem;
+  height: 1.5rem;
+  color: black;
+  fill: black;
+}
+
+.image_button_flex2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image_button_flex2--plusicon2 {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #eb9d4a;
+}
+.image_button_flex2--plusicon2:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.image_button_flex2--button2 {
+  color: rgb(42, 219, 250);
+  background-color: #ffffff;
+  color: #eb9d4a;
+  font-family: "Roboto", system-ui;
+  font-weight: 800;
+  font-style: normal;
+  padding: 0.5rem 1.3rem;
+  border-radius: 1.5rem;
+  border: none;
+}
+.image_button_flex2--button2:hover {
+  background-color: rgb(243, 241, 241);
+  cursor: pointer;
+}
+.image_button_flex2--image2 {
+  display: flex;
+  align-items: center;
+}
+.image_button_flex2--image2--size:first-child {
+  margin: 0 0 0 0;
+}
+.image_button_flex2--image2--size {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin: 0 0 0 -0.8rem;
+  border: 1px solid white;
+}
+.image_button_flex2--image2--size:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  filter: contrast(1.5);
+}
+
 .cards_flex--card3 {
   background-color: #b4f1ce;
+}
+
+.card3 {
+  padding: 2rem 1.8rem;
+  position: relative;
+}
+.card3:hover {
+  cursor: pointer;
+}
+.card3::before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 0.3rem;
+  bottom: -1.3rem;
+  border-radius: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0 ease-in-out;
+  background-color: #17e470;
+  transform: translate(-50%, -50%);
+}
+.card3::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 0.3rem;
+  background-color: #17e470;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0 ease-in-out;
+  margin: 0 0 0 2.6rem;
+  bottom: -2.3rem;
+  border-radius: 2rem;
+  transform: translate(-50%, -50%);
+}
+.card3__title {
+  font-size: 1.7rem;
+  color: black;
+  text-align: center;
+  margin: 2rem 0 0 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+.card3__category {
+  font-size: 1.4rem;
+  color: grey;
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+.card3__progresstitle {
+  font-size: 1.3rem;
+  color: black;
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+.card3__progresspercentage {
+  font-size: 1.3rem;
+  color: black;
+  text-align: right;
+  margin: 0.5rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+.card3__divider {
+  width: 25rem;
+  height: 0.5px;
+  margin: 1rem -1.8rem 1.5rem -1.8rem;
+  background-color: rgb(255, 255, 255);
+}
+.card3__progressbar {
+  width: 100%;
+  height: 0.6rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card3__progressbar--progress {
+  height: 100%;
+  background-color: #17e470;
+  border-radius: 0.5rem;
+}
+
+.card3:hover::before,
+.card3:hover::after {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  transform: translateY(0.2rem);
+}
+
+.card3__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card3__info--date {
+  font-size: 1.4rem;
+  color: grey;
+  font-weight: 600;
+}
+.card3__info--icon {
+  width: 2rem;
+  height: 1.5rem;
+  color: black;
+  fill: black;
+}
+
+.image_button_flex3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image_button_flex3--plusicon3 {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #0edb67;
+}
+.image_button_flex3--plusicon3:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.image_button_flex3--button3 {
+  color: rgb(42, 219, 250);
+  background-color: #ffffff;
+  color: #17e470;
+  font-family: "Roboto", system-ui;
+  font-weight: 800;
+  font-style: normal;
+  padding: 0.5rem 1.3rem;
+  border-radius: 1.5rem;
+  border: none;
+}
+.image_button_flex3--button3:hover {
+  background-color: rgb(243, 241, 241);
+  cursor: pointer;
+}
+.image_button_flex3--image3 {
+  display: flex;
+  align-items: center;
+}
+.image_button_flex3--image3--size:first-child {
+  margin: 0 0 0 0;
+}
+.image_button_flex3--image3--size {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin: 0 0 0 -0.8rem;
+  border: 1px solid white;
+}
+.image_button_flex3--image3--size:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  filter: contrast(1.5);
 }
 
 .cards_flex--card4 {
   background-color: #ffd3e2;
 }
 
+.card4 {
+  padding: 2rem 1.8rem;
+  position: relative;
+}
+.card4:hover {
+  cursor: pointer;
+}
+.card4::before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 0.3rem;
+  bottom: -1.3rem;
+  border-radius: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0 ease-in-out;
+  background-color: #ee4d82;
+  transform: translate(-50%, -50%);
+}
+.card4::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 0.3rem;
+  background-color: #ee4d82;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0 ease-in-out;
+  margin: 0 0 0 2.6rem;
+  bottom: -2.3rem;
+  border-radius: 2rem;
+  transform: translate(-50%, -50%);
+}
+.card4__title {
+  font-size: 1.7rem;
+  color: black;
+  text-align: center;
+  margin: 2rem 0 0 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+.card4__category {
+  font-size: 1.4rem;
+  color: grey;
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+.card4__progresstitle {
+  font-size: 1.3rem;
+  color: black;
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+.card4__progresspercentage {
+  font-size: 1.3rem;
+  color: black;
+  text-align: right;
+  margin: 0.5rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+.card4__divider {
+  width: 25rem;
+  height: 0.5px;
+  margin: 1rem -1.8rem 1.5rem -1.8rem;
+  background-color: rgb(255, 255, 255);
+}
+.card4__progressbar {
+  width: 100%;
+  height: 0.6rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card4__progressbar--progress {
+  height: 100%;
+  background-color: #ee4d82;
+  border-radius: 0.5rem;
+}
+
+.card4:hover::before,
+.card4:hover::after {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  transform: translateY(0.2rem);
+}
+
+.card4__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card4__info--date {
+  font-size: 1.4rem;
+  color: grey;
+  font-weight: 600;
+}
+.card4__info--icon {
+  width: 2rem;
+  height: 1.5rem;
+  color: black;
+  fill: black;
+}
+
+.image_button_flex4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image_button_flex4--plusicon4 {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #ee4d82;
+}
+.image_button_flex4--plusicon4:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.image_button_flex4--button4 {
+  color: rgb(42, 219, 250);
+  background-color: #ffffff;
+  color: #ee4d82;
+  font-family: "Roboto", system-ui;
+  font-weight: 800;
+  font-style: normal;
+  padding: 0.5rem 1.3rem;
+  border-radius: 1.5rem;
+  border: none;
+}
+.image_button_flex4--button4:hover {
+  background-color: rgb(243, 241, 241);
+  cursor: pointer;
+}
+.image_button_flex4--image4 {
+  display: flex;
+  align-items: center;
+}
+.image_button_flex4--image4--size:first-child {
+  margin: 0 0 0 0;
+}
+.image_button_flex4--image4--size {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin: 0 0 0 -0.8rem;
+  border: 1px solid white;
+}
+.image_button_flex4--image4--size:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  filter: contrast(1.5);
+}
+
+.card5 {
+  padding: 2rem 1.8rem;
+  position: relative;
+}
+.card5:hover {
+  cursor: pointer;
+}
+.card5::before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 0.3rem;
+  bottom: -1.3rem;
+  border-radius: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0 ease-in-out;
+  background-color: #ee4d82;
+  transform: translate(-50%, -50%);
+}
+.card5::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 0.3rem;
+  background-color: #ee4d82;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0 ease-in-out;
+  margin: 0 0 0 2.6rem;
+  bottom: -2.3rem;
+  border-radius: 2rem;
+  transform: translate(-50%, -50%);
+}
+.card5__title {
+  font-size: 1.7rem;
+  color: black;
+  text-align: center;
+  margin: 2rem 0 0 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+.card5__category {
+  font-size: 1.4rem;
+  color: grey;
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+.card5__progresstitle {
+  font-size: 1.3rem;
+  color: black;
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+.card5__progresspercentage {
+  font-size: 1.3rem;
+  color: black;
+  text-align: right;
+  margin: 0.5rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+.card5__divider {
+  width: 25rem;
+  height: 0.5px;
+  margin: 1rem -1.8rem 1.5rem -1.8rem;
+  background-color: rgb(255, 255, 255);
+}
+.card5__progressbar {
+  width: 100%;
+  height: 0.6rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card5__progressbar--progress {
+  height: 100%;
+  background-color: #ee4d82;
+  border-radius: 0.5rem;
+}
+
+.card5:hover::before,
+.card5:hover::after {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  transform: translateY(0.2rem);
+}
+
+.card5__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card5__info--date {
+  font-size: 1.4rem;
+  color: grey;
+  font-weight: 600;
+}
+.card5__info--icon {
+  width: 2rem;
+  height: 1.5rem;
+  color: black;
+  fill: black;
+}
+
+.image_button_flex5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image_button_flex5--plusicon5 {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #ee4d82;
+}
+.image_button_flex5--plusicon5:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.image_button_flex5--button5 {
+  color: rgb(42, 219, 250);
+  background-color: #ffffff;
+  color: #ee4d82;
+  font-family: "Roboto", system-ui;
+  font-weight: 800;
+  font-style: normal;
+  padding: 0.5rem 1.3rem;
+  border-radius: 1.5rem;
+  border: none;
+}
+.image_button_flex5--button5:hover {
+  background-color: rgb(243, 241, 241);
+  cursor: pointer;
+}
+.image_button_flex5--image5 {
+  display: flex;
+  align-items: center;
+}
+.image_button_flex5--image5--size:first-child {
+  margin: 0 0 0 0;
+}
+.image_button_flex5--image5--size {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin: 0 0 0 -0.8rem;
+  border: 1px solid white;
+}
+.image_button_flex5--image5--size:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  filter: contrast(1.5);
+}
+
 .cards_flex--card5 {
   background-color: #edcdf8;
+  margin-bottom: 1rem;
 }
 
 .cards_flex--card6 {
@@ -232,6 +912,102 @@ body {
 
 .cards_flex--card8 {
   background-color: #ffffff;
+}
+
+.card {
+  padding: 2rem 1.8rem;
+  position: relative;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 0.3rem;
+  bottom: -1.3rem;
+  border-radius: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0 ease-in-out;
+  background-color: rgb(42, 219, 250);
+  transform: translate(-50%, -50%);
+}
+.card::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 0.3rem;
+  background-color: rgb(42, 219, 250);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0 ease-in-out;
+  margin: 0 0 0 2.6rem;
+  bottom: -2.3rem;
+  border-radius: 2rem;
+  transform: translate(-50%, -50%);
+}
+.card__title {
+  font-size: 1.7rem;
+  color: black;
+  text-align: center;
+  margin: 2rem 0 0 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+.card__category {
+  font-size: 1.4rem;
+  color: grey;
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+.card__progresstitle {
+  font-size: 1.3rem;
+  color: black;
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+.card__progresspercentage {
+  font-size: 1.3rem;
+  color: black;
+  text-align: right;
+  margin: 0.5rem 0 0.5rem 0;
+  font-family: "Roboto", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+.card__divider {
+  width: 25rem;
+  height: 0.5px;
+  margin: 1rem -1.8rem 1.5rem -1.8rem;
+  background-color: rgb(179, 179, 179);
+}
+.card__progressbar {
+  width: 100%;
+  height: 0.6rem;
+  background-color: rgb(224, 220, 220);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card__progressbar--progress {
+  height: 100%;
+  background-color: rgb(42, 219, 250);
+  border-radius: 0.5rem;
+}
+
+.card:hover::before,
+.card:hover::after {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  transform: translateY(0.2rem);
 }
 
 .header__loginarea {
@@ -299,6 +1075,55 @@ body {
   align-items: center;
   gap: 7rem;
   margin: 0 0 5rem 10rem;
+}
+
+.image_button_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.image_button_flex--plusicon {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: rgb(42, 219, 250);
+}
+.image_button_flex--plusicon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.image_button_flex--button {
+  color: rgb(42, 219, 250);
+  background-color: rgba(86, 217, 240, 0.212);
+  font-family: "Roboto", system-ui;
+  font-weight: 800;
+  font-style: normal;
+  padding: 0.5rem 1.3rem;
+  border-radius: 1.5rem;
+  border: none;
+}
+.image_button_flex--button:hover {
+  background-color: rgb(238, 234, 234);
+  cursor: pointer;
+}
+.image_button_flex--image {
+  display: flex;
+  align-items: center;
+}
+.image_button_flex--image--size:first-child {
+  margin: 0 0 0 0;
+}
+.image_button_flex--image--size {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin: 0 0 0 -0.8rem;
+  border: 1px solid white;
+  transition: all 0.3 ease;
+}
+.image_button_flex--image--size:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  filter: contrast(1.5);
 }
 
 .grid-container {

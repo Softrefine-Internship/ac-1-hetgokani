@@ -23,3 +23,15 @@
     }
   }
 }
+.two__vertical__dots {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.dot {
+  background-color: black;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+}

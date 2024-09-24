@@ -31,3 +31,19 @@
     margin: 0.7rem 2.5rem 0 2.3rem;
   }
 }
+.card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &--date {
+    font-size: 1.4rem;
+    color: $color-grey;
+    font-weight: 600;
+  }
+  &--icon {
+    width: 2rem;
+    height: 1.5rem;
+    color: black;
+    fill: black;
+  }
+}
