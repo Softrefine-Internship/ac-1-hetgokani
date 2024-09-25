@@ -815,3 +815,70 @@
   cursor: pointer;
   transform: translateY(0.2rem);
 }
+.title__icon__flex__staricon2 {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-top: -1.3rem;
+}
+
+.messages {
+  &_card {
+    width: 100%;
+    height: 10rem;
+    gap: 1.5rem;
+
+    border-bottom: 1px solid rgba(145, 145, 145, 0.61);
+
+    &__image {
+      width: 4.6rem;
+      height: 4.6rem;
+      border-radius: 50%;
+      margin: 0 0 0 3rem;
+    }
+    &__messages {
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: rgb(59, 59, 59);
+      line-height: 1.3;
+      margin-right: 1rem;
+    }
+    &__date {
+      font-size: 1.3rem;
+      font-weight: 300;
+      text-align: right;
+      margin: 0 1.5rem 0 0;
+      color: rgb(117, 117, 117);
+    }
+  }
+}
+.messages {
+  &_card1 {
+    width: 100%;
+    height: 10rem;
+    gap: 1.5rem;
+
+    margin-top: 2.4rem;
+
+    border-bottom: 1px solid rgba(145, 145, 145, 0.61);
+
+    &__image {
+      width: 4.6rem;
+      height: 4.6rem;
+      border-radius: 50%;
+      margin: 0 0 0 3rem;
+    }
+    &__messages {
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: rgb(59, 59, 59);
+      line-height: 1.3;
+    }
+    &__date {
+      font-size: 1.3rem;
+      font-weight: 300;
+      text-align: right;
+      margin: 0 1.5rem 0 0;
+      color: rgb(117, 117, 117);
+    }
+  }
+}

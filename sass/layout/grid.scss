@@ -1,6 +1,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 8% 57% 35%;
+  overflow: visible;
 }
 
 .icon__column {
@@ -21,10 +22,10 @@
 
 .messages__column {
   background-color: $color-main-bg;
-
-  overflow: auto;
-  height: 50rem;
+  overflow: visible;
+  height: 100vh;
 }
+
 .SCROLLABLE-FIX {
   display: grid;
   grid-template-rows: auto 1fr;
@@ -35,6 +36,13 @@
 .progress {
   overflow-y: auto;
   margin-top: -2rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.messages {
+  overflow-y: auto;
 
   &::-webkit-scrollbar {
     display: none;

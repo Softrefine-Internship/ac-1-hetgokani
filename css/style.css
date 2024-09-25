@@ -71,6 +71,12 @@ html {
   fill: black;
 }
 
+.messages__divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(145, 145, 145, 0.61);
+}
+
 .header {
   margin: 2rem 3rem 2rem 3rem;
   display: flex;
@@ -92,11 +98,11 @@ html {
 .header__title {
   font-size: 3rem;
   font-weight: 700;
-  margin: 0 0 0 -23rem;
+  margin: 0 0 0 -32rem;
 }
 .header__search {
   position: relative;
-  margin: 0 0 0 -25rem;
+  margin: 0 0 0 -40rem;
 }
 .header__searchbar {
   outline: none;
@@ -1010,6 +1016,66 @@ body {
   transform: translateY(0.2rem);
 }
 
+.title__icon__flex__staricon2 {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-top: -1.3rem;
+}
+
+.messages_card {
+  width: 100%;
+  height: 10rem;
+  gap: 1.5rem;
+  border-bottom: 1px solid rgba(145, 145, 145, 0.61);
+}
+.messages_card__image {
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 50%;
+  margin: 0 0 0 3rem;
+}
+.messages_card__messages {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgb(59, 59, 59);
+  line-height: 1.3;
+  margin-right: 1rem;
+}
+.messages_card__date {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: right;
+  margin: 0 1.5rem 0 0;
+  color: rgb(117, 117, 117);
+}
+
+.messages_card1 {
+  width: 100%;
+  height: 10rem;
+  gap: 1.5rem;
+  margin-top: 2.4rem;
+  border-bottom: 1px solid rgba(145, 145, 145, 0.61);
+}
+.messages_card1__image {
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 50%;
+  margin: 0 0 0 3rem;
+}
+.messages_card1__messages {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgb(59, 59, 59);
+  line-height: 1.3;
+}
+.messages_card1__date {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: right;
+  margin: 0 1.5rem 0 0;
+  color: rgb(117, 117, 117);
+}
+
 .header__loginarea {
   display: flex;
   align-items: center;
@@ -1126,9 +1192,151 @@ body {
   filter: contrast(1.5);
 }
 
+.messages__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3.7rem 1rem 1rem 3rem;
+}
+.messages__title__text {
+  font-size: 2.2rem;
+}
+.messages__title__text:hover {
+  transform: skew(-10deg);
+  cursor: pointer;
+}
+.messages__title__iconflex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.messages__title__iconflex--searchicon {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.messages__title__iconflex--searchicon:hover {
+  transform: scale(1.1);
+  color: red;
+  cursor: pointer;
+}
+
+.title__icon__flex__staricon2 {
+  display: none;
+}
+
+.messages_card:hover .title__icon__flex__staricon {
+  display: none;
+}
+
+.messages_card:hover .title__icon__flex__staricon2 {
+  display: block;
+}
+
+.messages {
+  display: flex;
+  align-items: center;
+}
+.messages_card {
+  display: flex;
+  align-items: center;
+}
+
+.title__icon__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: -0.5rem 0 0.7rem 0;
+  width: 35.3rem;
+}
+.title__icon__flex__title {
+  font-size: 1.7rem;
+  font-family: "Roboto", system-ui;
+  margin: 0;
+  font-style: normal;
+}
+.title__icon__flex__staricon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.messages {
+  overflow-y: auto;
+  max-height: 100vh;
+  z-index: 99;
+}
+
+.messages__column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.messages_card {
+  display: flex;
+  z-index: 99;
+}
+
+.title__icon__flex:first-child {
+  margin-top: 2rem;
+}
+
+.title__icon__flex {
+  margin-top: -2rem;
+}
+
+.title__icon__flex__title {
+  margin-top: -1.5rem;
+}
+
+.title__icon__flex__staricon {
+  margin-top: -1.5rem;
+}
+
+.title__icon__flex:first-child {
+  margin-top: 2rem;
+}
+
+.title__icon__flex1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: -0.5rem 0 0.7rem 0;
+  width: 35.3rem;
+}
+.title__icon__flex1__title {
+  font-size: 1.7rem;
+  font-family: "Roboto", system-ui;
+  margin: 2rem 0 0 0;
+  font-style: normal;
+}
+.title__icon__flex1__staricon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.messages_card {
+  transition: all 0.5s ease;
+}
+
+.messages_card:hover {
+  cursor: pointer;
+  background-color: white;
+  transform: scale(1.01) translateY(6px);
+  margin-left: 1.2rem;
+  border-radius: 2rem;
+  border-bottom: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  z-index: 9999;
+}
+
+.messages_card__messages {
+  padding: 0 1.5rem 0 0;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 8% 57% 35%;
+  overflow: visible;
 }
 
 .icon__column {
@@ -1149,8 +1357,8 @@ body {
 
 .messages__column {
   background-color: #f3f6fd;
-  overflow: auto;
-  height: 50rem;
+  overflow: visible;
+  height: 100vh;
 }
 
 .SCROLLABLE-FIX {
@@ -1165,6 +1373,13 @@ body {
   margin-top: -2rem;
 }
 .progress::-webkit-scrollbar {
+  display: none;
+}
+
+.messages {
+  overflow-y: auto;
+}
+.messages::-webkit-scrollbar {
   display: none;
 }
 
