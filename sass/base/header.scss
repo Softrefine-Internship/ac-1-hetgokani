@@ -31,13 +31,21 @@
   }
   &__title {
     font-size: 3rem;
-
+    margin: 0 0 0 5.5rem;
     font-weight: 700;
-    margin: 0 0 0 -37rem;
+
+    @include responsive(phone) {
+    }
+    @include responsive(tab-small) {
+    }
+    @include responsive(tab-large) {
+    }
+    @include responsive(big-screens) {
+      margin: 0 0 0 6.5rem;
+    }
   }
   &__search {
     position: relative;
-    margin: 0 0 0 -35rem;
   }
   &__searchbar {
     outline: none;
@@ -47,6 +55,7 @@
     padding: 2rem 3.5rem;
     width: 30rem;
     appearance: auto;
+    margin: 0 0 0 7rem;
 
     &:focus {
       border: none;
@@ -55,8 +64,9 @@
   }
   &__searchicon {
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 3%;
+    margin: 0 0 0 7rem;
 
     width: 2rem;
     height: 2rem;

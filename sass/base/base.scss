@@ -7,6 +7,17 @@
 html {
   font-family: sans-serif;
   font-size: 62.5%;
+  @include responsive(phone) {
+  }
+  @include responsive(tab-small) {
+    font-size: 75%;
+  }
+  @include responsive(tab-large) {
+    font-size: 88%;
+  }
+  @include responsive(big-screens) {
+    font-size: 90%;
+  }
 }
 .background__container {
   width: 100vw;

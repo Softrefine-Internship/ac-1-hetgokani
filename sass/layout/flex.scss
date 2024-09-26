@@ -3,6 +3,11 @@
   align-items: center;
   gap: 0.5rem;
 }
+.flex_title {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
 .icon__column__flex {
   display: flex;
   align-items: center;
@@ -60,6 +65,20 @@
   align-items: center;
   gap: 7rem;
   margin: 0 0 5rem 10rem;
+  @include responsive(phone) {
+  }
+  @include responsive(tab-small) {
+    gap: 3rem;
+    margin-left: 7rem;
+  }
+  @media (min-width: 93.5em) and (max-width: 102.25em) {
+    gap: 3rem;
+    margin-left: 10rem;
+  }
+  @media (min-width: 12.5em) and (max-width: 79em) {
+    gap: 3rem;
+    margin-left: 3rem;
+  }
 }
 .image_button_flex {
   display: flex;
@@ -162,8 +181,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: -0.5rem 0 0.7rem 0;
-  width: 35.3rem;
+  margin: -0.5rem 2rem 0.7rem 0;
+  width: 28;
 
   &__title {
     font-size: 1.7rem;
@@ -213,7 +232,6 @@
   align-items: center;
   justify-content: space-between;
   margin: -0.5rem 0 0.7rem 0;
-  width: 35.3rem;
 
   &__title {
     font-size: 1.7rem;

@@ -11,7 +11,33 @@
   height: 23rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 15%;
+  @include responsive(phone) {
+  }
+  @include responsive(tab-small) {
+    width: 30rem;
+  }
+  @include responsive(tab-large) {
+    width: 30rem;
+    gap: 0rem;
+  }
+  @include responsive(big-screens) {
+    width: 40rem;
+    gap: 0rem;
+  }
 }
+.card__divider {
+  @include responsive(phone) {
+  }
+  @include responsive(tab-small) {
+  }
+  @include responsive(tab-large) {
+  }
+  @include responsive(big-screens) {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
 .cards_flex--card1 {
   background-color: $color-white;
 }
@@ -95,6 +121,20 @@
     height: 0.5px;
     margin: 1rem -1.8rem 1.5rem -1.8rem;
     background-color: rgb(255, 255, 255);
+    @include responsive(phone) {
+    }
+    @include responsive(tab-small) {
+    }
+    @include responsive(tab-large) {
+      width: 115%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @include responsive(big-screens) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
   }
 
   &__progressbar {
@@ -267,6 +307,20 @@
     height: 0.5px;
     margin: 1rem -1.8rem 1.5rem -1.8rem;
     background-color: rgb(255, 255, 255);
+    @include responsive(phone) {
+    }
+    @include responsive(tab-small) {
+    }
+    @include responsive(tab-large) {
+      width: 120%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @include responsive(big-screens) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
   }
 
   &__progressbar {
@@ -440,6 +494,20 @@
     height: 0.5px;
     margin: 1rem -1.8rem 1.5rem -1.8rem;
     background-color: rgb(255, 255, 255);
+    @include responsive(phone) {
+    }
+    @include responsive(tab-small) {
+    }
+    @include responsive(tab-large) {
+      width: 120%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @include responsive(big-screens) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
   }
 
   &__progressbar {
@@ -610,6 +678,20 @@
     height: 0.5px;
     margin: 1rem -1.8rem 1.5rem -1.8rem;
     background-color: rgb(255, 255, 255);
+    @include responsive(phone) {
+    }
+    @include responsive(tab-small) {
+    }
+    @include responsive(tab-large) {
+      width: 120%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @include responsive(big-screens) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
   }
 
   &__progressbar {
@@ -630,20 +712,16 @@
 .fixglitch {
   margin-top: 13rem;
   @include responsive(phone) {
-    background-color: red;
-    margin-top: 20rem;
+    margin-top: -0.3rem;
   }
   @include responsive(tab-small) {
-    background-color: rgb(0, 4, 255);
-    margin-top: 20rem;
+    margin-top: -0.3rem;
   }
   @include responsive(tab-large) {
-    background-color: rgb(255, 0, 76);
-    margin-top: 20rem;
+    margin-top: -0.3rem;
   }
   @include responsive(big-screens) {
-    background-color: rgb(0, 255, 55);
-    margin-top: 20rem;
+    margin-top: -0.3rem;
   }
 }
 
@@ -658,6 +736,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   &--date {
     font-size: 1.4rem;
     color: $color-grey;
@@ -722,7 +801,6 @@
 }
 .cards_flex--card5 {
   background-color: $color-card-purple;
-  margin-bottom: 1rem;
 }
 .cards_flex--card6 {
   background-color: $color-card-orange;
@@ -810,6 +888,20 @@
     height: 0.5px;
     margin: 1rem -1.8rem 1.5rem -1.8rem;
     background-color: rgb(179, 179, 179);
+    @include responsive(phone) {
+    }
+    @include responsive(tab-small) {
+    }
+    @include responsive(tab-large) {
+      width: 115%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @include responsive(big-screens) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
   }
 
   &__progressbar {
@@ -899,5 +991,16 @@
       margin: 0 1.5rem 0 0;
       color: rgb(117, 117, 117);
     }
+  }
+}
+.messages_card__date {
+  margin-right: 2rem;
+}
+
+.messages_card__messages {
+  margin-right: 2rem;
+  @include responsive(big-screens) {
+    font-size: 90%;
+    font-size: 1.5rem;
   }
 }

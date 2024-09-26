@@ -8,6 +8,21 @@ html {
   font-family: sans-serif;
   font-size: 62.5%;
 }
+@media (min-width: 79.5em) and (max-width: 103em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (min-width: 103.5em) and (max-width: 125em) {
+  html {
+    font-size: 88%;
+  }
+}
+@media (min-width: 125em) {
+  html {
+    font-size: 90%;
+  }
+}
 
 .background__container {
   width: 100vw;
@@ -88,17 +103,17 @@ html {
     background-color: red;
   }
 }
-@media (max-width: 56.25em) {
+@media (min-width: 79.5em) and (max-width: 103em) {
   .header {
     background-color: rgb(0, 4, 255);
   }
 }
-@media (max-width: 75em) {
+@media (min-width: 103.5em) and (max-width: 125em) {
   .header {
     background-color: rgb(255, 0, 76);
   }
 }
-@media (max-width: 37em) {
+@media (min-width: 125em) {
   .header {
     background-color: rgb(0, 255, 55);
   }
@@ -117,12 +132,16 @@ html {
 }
 .header__title {
   font-size: 3rem;
+  margin: 0 0 0 5.5rem;
   font-weight: 700;
-  margin: 0 0 0 -37rem;
+}
+@media (min-width: 125em) {
+  .header__title {
+    margin: 0 0 0 6.5rem;
+  }
 }
 .header__search {
   position: relative;
-  margin: 0 0 0 -35rem;
 }
 .header__searchbar {
   outline: none;
@@ -132,6 +151,7 @@ html {
   padding: 2rem 3.5rem;
   width: 30rem;
   appearance: auto;
+  margin: 0 0 0 7rem;
 }
 .header__searchbar:focus {
   border: none;
@@ -139,8 +159,9 @@ html {
 }
 .header__searchicon {
   position: absolute;
-  top: 20%;
+  top: 22%;
   left: 3%;
+  margin: 0 0 0 7rem;
   width: 2rem;
   height: 2rem;
   color: black;
@@ -258,6 +279,51 @@ body {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 15%;
 }
+@media (min-width: 79.5em) and (max-width: 103em) {
+  .cards_flex--card1,
+  .cards_flex--card2,
+  .cards_flex--card3,
+  .cards_flex--card4,
+  .cards_flex--card5,
+  .cards_flex--card6,
+  .cards_flex--card7,
+  .cards_flex--card8 {
+    width: 30rem;
+  }
+}
+@media (min-width: 103.5em) and (max-width: 125em) {
+  .cards_flex--card1,
+  .cards_flex--card2,
+  .cards_flex--card3,
+  .cards_flex--card4,
+  .cards_flex--card5,
+  .cards_flex--card6,
+  .cards_flex--card7,
+  .cards_flex--card8 {
+    width: 30rem;
+    gap: 0rem;
+  }
+}
+@media (min-width: 125em) {
+  .cards_flex--card1,
+  .cards_flex--card2,
+  .cards_flex--card3,
+  .cards_flex--card4,
+  .cards_flex--card5,
+  .cards_flex--card6,
+  .cards_flex--card7,
+  .cards_flex--card8 {
+    width: 40rem;
+    gap: 0rem;
+  }
+}
+
+@media (min-width: 125em) {
+  .card__divider {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
 
 .cards_flex--card1 {
   background-color: #ffffff;
@@ -341,6 +407,20 @@ body {
   height: 0.5px;
   margin: 1rem -1.8rem 1.5rem -1.8rem;
   background-color: rgb(255, 255, 255);
+}
+@media (min-width: 103.5em) and (max-width: 125em) {
+  .card2__divider {
+    width: 115%;
+    box-sizing: border-box;
+    margin-right: -0.5rem;
+  }
+}
+@media (min-width: 125em) {
+  .card2__divider {
+    width: 111%;
+    box-sizing: border-box;
+    margin-right: -0.5rem;
+  }
 }
 .card2__progressbar {
   width: 100%;
@@ -508,6 +588,20 @@ body {
   margin: 1rem -1.8rem 1.5rem -1.8rem;
   background-color: rgb(255, 255, 255);
 }
+@media (min-width: 103.5em) and (max-width: 125em) {
+  .card3__divider {
+    width: 120%;
+    box-sizing: border-box;
+    margin-right: -0.5rem;
+  }
+}
+@media (min-width: 125em) {
+  .card3__divider {
+    width: 111%;
+    box-sizing: border-box;
+    margin-right: -0.5rem;
+  }
+}
 .card3__progressbar {
   width: 100%;
   height: 0.6rem;
@@ -674,6 +768,20 @@ body {
   margin: 1rem -1.8rem 1.5rem -1.8rem;
   background-color: rgb(255, 255, 255);
 }
+@media (min-width: 103.5em) and (max-width: 125em) {
+  .card4__divider {
+    width: 120%;
+    box-sizing: border-box;
+    margin-right: -0.5rem;
+  }
+}
+@media (min-width: 125em) {
+  .card4__divider {
+    width: 111%;
+    box-sizing: border-box;
+    margin-right: -0.5rem;
+  }
+}
 .card4__progressbar {
   width: 100%;
   height: 0.6rem;
@@ -836,6 +944,20 @@ body {
   margin: 1rem -1.8rem 1.5rem -1.8rem;
   background-color: rgb(255, 255, 255);
 }
+@media (min-width: 103.5em) and (max-width: 125em) {
+  .card5__divider {
+    width: 120%;
+    box-sizing: border-box;
+    margin-right: -0.5rem;
+  }
+}
+@media (min-width: 125em) {
+  .card5__divider {
+    width: 111%;
+    box-sizing: border-box;
+    margin-right: -0.5rem;
+  }
+}
 .card5__progressbar {
   width: 100%;
   height: 0.6rem;
@@ -854,26 +976,22 @@ body {
 }
 @media (max-width: 37.5em) {
   .fixglitch {
-    background-color: red;
-    margin-top: 20rem;
+    margin-top: -0.3rem;
   }
 }
-@media (max-width: 56.25em) {
+@media (min-width: 79.5em) and (max-width: 103em) {
   .fixglitch {
-    background-color: rgb(0, 4, 255);
-    margin-top: 20rem;
+    margin-top: -0.3rem;
   }
 }
-@media (max-width: 75em) {
+@media (min-width: 103.5em) and (max-width: 125em) {
   .fixglitch {
-    background-color: rgb(255, 0, 76);
-    margin-top: 20rem;
+    margin-top: -0.3rem;
   }
 }
-@media (max-width: 37em) {
+@media (min-width: 125em) {
   .fixglitch {
-    background-color: rgb(0, 255, 55);
-    margin-top: 20rem;
+    margin-top: -0.3rem;
   }
 }
 
@@ -953,7 +1071,6 @@ body {
 
 .cards_flex--card5 {
   background-color: #edcdf8;
-  margin-bottom: 1rem;
 }
 
 .cards_flex--card6 {
@@ -1043,6 +1160,20 @@ body {
   margin: 1rem -1.8rem 1.5rem -1.8rem;
   background-color: rgb(179, 179, 179);
 }
+@media (min-width: 103.5em) and (max-width: 125em) {
+  .card__divider {
+    width: 115%;
+    box-sizing: border-box;
+    margin-right: -0.5rem;
+  }
+}
+@media (min-width: 125em) {
+  .card__divider {
+    width: 111%;
+    box-sizing: border-box;
+    margin-right: -0.5rem;
+  }
+}
 .card__progressbar {
   width: 100%;
   height: 0.6rem;
@@ -1124,10 +1255,30 @@ body {
   color: rgb(117, 117, 117);
 }
 
+.messages_card__date {
+  margin-right: 2rem;
+}
+
+.messages_card__messages {
+  margin-right: 2rem;
+}
+@media (min-width: 125em) {
+  .messages_card__messages {
+    font-size: 90%;
+    font-size: 1.5rem;
+  }
+}
+
 .header__loginarea {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.flex_title {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .icon__column__flex {
@@ -1189,6 +1340,24 @@ body {
   align-items: center;
   gap: 7rem;
   margin: 0 0 5rem 10rem;
+}
+@media (min-width: 79.5em) and (max-width: 103em) {
+  .cards_flex {
+    gap: 3rem;
+    margin-left: 7rem;
+  }
+}
+@media (min-width: 93.5em) and (max-width: 102.25em) {
+  .cards_flex {
+    gap: 3rem;
+    margin-left: 10rem;
+  }
+}
+@media (min-width: 12.5em) and (max-width: 79em) {
+  .cards_flex {
+    gap: 3rem;
+    margin-left: 3rem;
+  }
 }
 
 .image_button_flex {
@@ -1293,8 +1462,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: -0.5rem 0 0.7rem 0;
-  width: 35.3rem;
+  margin: -0.5rem 2rem 0.7rem 0;
+  width: 28;
 }
 .title__icon__flex__title {
   font-size: 1.7rem;
@@ -1349,7 +1518,6 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: -0.5rem 0 0.7rem 0;
-  width: 35.3rem;
 }
 .title__icon__flex1__title {
   font-size: 1.7rem;
@@ -1427,6 +1595,30 @@ body {
 .progress {
   overflow-y: auto;
   margin-top: -2rem;
+}
+@media (max-width: 37.5em) {
+  .progress {
+    margin-right: 4rem;
+    margin-left: -4rem;
+  }
+}
+@media (min-width: 79.5em) and (max-width: 103em) {
+  .progress {
+    margin-right: 4rem;
+    margin-left: -4rem;
+  }
+}
+@media (min-width: 103.5em) and (max-width: 125em) {
+  .progress {
+    margin-right: 4rem;
+    margin-left: -4rem;
+  }
+}
+@media (min-width: 125em) {
+  .progress {
+    margin-right: 6rem;
+    margin-left: -4rem;
+  }
 }
 .progress::-webkit-scrollbar {
   display: none;

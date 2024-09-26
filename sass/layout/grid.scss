@@ -36,6 +36,22 @@
 .progress {
   overflow-y: auto;
   margin-top: -2rem;
+  @include responsive(phone) {
+    margin-right: 4rem;
+    margin-left: -4rem;
+  }
+  @include responsive(tab-small) {
+    margin-right: 4rem;
+    margin-left: -4rem;
+  }
+  @include responsive(tab-large) {
+    margin-right: 4rem;
+    margin-left: -4rem;
+  }
+  @include responsive(big-screens) {
+    margin-right: 6rem;
+    margin-left: -4rem;
+  }
 
   &::-webkit-scrollbar {
     display: none;

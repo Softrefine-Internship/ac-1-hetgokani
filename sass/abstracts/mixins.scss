@@ -5,17 +5,17 @@
     }
   }
   @if $break == tab-small {
-    @media (max-width: 56.25em) {
+    @media (min-width: 79.5em) and (max-width: 103em) {
       @content;
     }
   }
   @if $break == tab-large {
-    @media (max-width: 75em) {
+    @media (min-width: 103.5em) and (max-width: 125em) {
       @content;
     }
   }
   @if $break == big-screens {
-    @media (max-width: 37em) {
+    @media (min-width: 125em) {
       @content;
     }
   }
