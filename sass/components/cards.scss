@@ -11,6 +11,7 @@
   height: 23rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 15%;
+
   @include responsive(phone) {
   }
   @include responsive(tab-small) {
@@ -23,6 +24,25 @@
   @include responsive(big-screens) {
     width: 40rem;
     gap: 0rem;
+  }
+  @media (min-width: 62.5em) and (max-width: 79em) {
+    width: 35rem;
+    gap: 0rem;
+  }
+  @media (min-width: 50em) and (max-width: 62.4em) {
+    width: 50rem;
+    gap: 0rem;
+    border-radius: 2rem;
+  }
+  @media (min-width: 37.5em) and (max-width: 49.93em) {
+    width: 50rem;
+    gap: 0rem;
+    border-radius: 2rem;
+  }
+  @media (min-width: 3em) and (max-width: 37.43em) {
+    width: 40rem;
+    gap: 0rem;
+    border-radius: 2rem;
   }
 }
 .card__divider {
@@ -78,6 +98,12 @@
     bottom: -2.3rem;
     border-radius: 2rem;
     transform: translate(-50%, -50%);
+    @media (min-width: 37.5em) and (max-width: 62.4em) {
+      margin: 0 0 0 5rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
+      margin: 0 0 0 4rem;
+    }
   }
 
   &__title {
@@ -131,6 +157,41 @@
       margin-right: -0.5rem;
     }
     @include responsive(big-screens) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.5em) and (max-width: 79.3em) {
+      width: 150%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.5em) and (max-width: 76.3em) {
+      width: 116%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 81em) and (max-width: 82.8em) {
+      width: 115%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 50em) and (max-width: 62.4em) {
+      width: 108%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.8em) and (max-width: 79.65em) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 37.5em) and (max-width: 49.93em) {
+      width: 108%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
       width: 111%;
       box-sizing: border-box;
       margin-right: -0.5rem;
@@ -203,6 +264,12 @@
       background-color: rgb(243, 241, 241);
       cursor: pointer;
     }
+    @media (min-width: 37.5em) and (max-width: 49.93em) {
+      font-size: 1.8rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
+      font-size: 1.5rem;
+    }
   }
   &--image2 {
     display: flex;
@@ -264,6 +331,13 @@
     bottom: -2.3rem;
     border-radius: 2rem;
     transform: translate(-50%, -50%);
+    @media (min-width: 37.5em) and (max-width: 62.4em) {
+      margin: 0 0 0 5rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
+      margin: 0 0 0 4rem;
+      height: 0.35rem;
+    }
   }
 
   &__title {
@@ -312,11 +386,46 @@
     @include responsive(tab-small) {
     }
     @include responsive(tab-large) {
-      width: 120%;
+      width: 115%;
       box-sizing: border-box;
       margin-right: -0.5rem;
     }
     @include responsive(big-screens) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.5em) and (max-width: 79.3em) {
+      width: 150%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.5em) and (max-width: 76.3em) {
+      width: 116%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 81em) and (max-width: 82.8em) {
+      width: 115%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 50em) and (max-width: 62.4em) {
+      width: 108%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.8em) and (max-width: 79.65em) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 37.5em) and (max-width: 49.93em) {
+      width: 108%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
       width: 111%;
       box-sizing: border-box;
       margin-right: -0.5rem;
@@ -390,6 +499,12 @@
       background-color: rgb(243, 241, 241);
       cursor: pointer;
     }
+    @media (min-width: 37.5em) and (max-width: 49.93em) {
+      font-size: 1.8rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
+      font-size: 1.5rem;
+    }
   }
   &--image3 {
     display: flex;
@@ -451,6 +566,13 @@
     bottom: -2.3rem;
     border-radius: 2rem;
     transform: translate(-50%, -50%);
+    @media (min-width: 37.5em) and (max-width: 62.4em) {
+      margin: 0 0 0 5rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
+      margin: 0 0 0 4rem;
+      height: 0.35rem;
+    }
   }
 
   &__title {
@@ -499,11 +621,51 @@
     @include responsive(tab-small) {
     }
     @include responsive(tab-large) {
-      width: 120%;
+      width: 115%;
       box-sizing: border-box;
       margin-right: -0.5rem;
     }
     @include responsive(big-screens) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.5em) and (max-width: 79.3em) {
+      width: 150%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.5em) and (max-width: 76.3em) {
+      width: 116%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 81em) and (max-width: 82.8em) {
+      width: 115%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 50em) and (max-width: 62.4em) {
+      width: 108%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.8em) and (max-width: 79.65em) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 37.5em) and (max-width: 49.93em) {
+      width: 108%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
       width: 111%;
       box-sizing: border-box;
       margin-right: -0.5rem;
@@ -577,6 +739,12 @@
       background-color: rgb(243, 241, 241);
       cursor: pointer;
     }
+    @media (min-width: 37.5em) and (max-width: 49.93em) {
+      font-size: 1.8rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
+      font-size: 1.5rem;
+    }
   }
   &--image4 {
     display: flex;
@@ -621,6 +789,9 @@
     transition: all 0 ease-in-out;
     background-color: #ee4d82;
     transform: translate(-50%, -50%);
+    @media (min-width: 37.5em) and (max-width: 62.4em) {
+      height: 0.4rem;
+    }
   }
   &::after {
     content: "";
@@ -635,6 +806,12 @@
     bottom: -2.3rem;
     border-radius: 2rem;
     transform: translate(-50%, -50%);
+    @media (min-width: 37.5em) and (max-width: 62.4em) {
+      margin: 0 0 0 5rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
+      margin: 0 0 0 4rem;
+    }
   }
 
   &__title {
@@ -683,11 +860,46 @@
     @include responsive(tab-small) {
     }
     @include responsive(tab-large) {
-      width: 120%;
+      width: 115%;
       box-sizing: border-box;
       margin-right: -0.5rem;
     }
     @include responsive(big-screens) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.5em) and (max-width: 79.3em) {
+      width: 150%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.5em) and (max-width: 76.3em) {
+      width: 116%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 81em) and (max-width: 82.8em) {
+      width: 115%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 50em) and (max-width: 62.4em) {
+      width: 108%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.8em) and (max-width: 79.65em) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 37.5em) and (max-width: 49.93em) {
+      width: 108%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
       width: 111%;
       box-sizing: border-box;
       margin-right: -0.5rem;
@@ -732,6 +944,15 @@
   }
   @media (min-width: 79em) and (max-width: 83em) {
     margin-top: 30rem;
+  }
+  @media (min-width: 62.5em) and (max-width: 79em) {
+    margin-top: 20rem;
+  }
+  @media (min-width: 50em) and (max-width: 62.4em) {
+    margin-top: 0rem;
+  }
+  @media (min-width: 3.5em) and (max-width: 62.4em) {
+    margin-top: 0rem;
   }
 }
 
@@ -785,6 +1006,12 @@
     &:hover {
       background-color: rgb(243, 241, 241);
       cursor: pointer;
+    }
+    @media (min-width: 37.5em) and (max-width: 49.93em) {
+      font-size: 1.8rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
+      font-size: 1.5rem;
     }
   }
   &--image5 {
@@ -855,6 +1082,12 @@
     bottom: -2.3rem;
     border-radius: 2rem;
     transform: translate(-50%, -50%);
+    @media (min-width: 37.5em) and (max-width: 62.4em) {
+      margin: 0 0 0 5rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
+      margin: 0 0 0 4rem;
+    }
   }
 
   &__title {
@@ -908,6 +1141,41 @@
       margin-right: -0.5rem;
     }
     @include responsive(big-screens) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.5em) and (max-width: 79.3em) {
+      width: 150%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.5em) and (max-width: 76.3em) {
+      width: 116%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 81em) and (max-width: 82.8em) {
+      width: 115%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 50em) and (max-width: 62.4em) {
+      width: 108%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 62.8em) and (max-width: 79.65em) {
+      width: 111%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 37.5em) and (max-width: 49.93em) {
+      width: 108%;
+      box-sizing: border-box;
+      margin-right: -0.5rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
       width: 111%;
       box-sizing: border-box;
       margin-right: -0.5rem;

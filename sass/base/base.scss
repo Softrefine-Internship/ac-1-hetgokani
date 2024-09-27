@@ -18,12 +18,29 @@ html {
   @include responsive(big-screens) {
     font-size: 90%;
   }
+  @media (min-width: 62.5em) and (max-width: 79em) {
+    font-size: 60%;
+  }
+  @media (min-width: 50em) and (max-width: 62.4em) {
+    font-size: 45%;
+  }
+  @media (min-width: 37.5em) and (max-width: 49.93em) {
+    font-size: 35%;
+  }
+
+  @media (min-width: 3em) and (max-width: 37.43em) {
+    font-size: 30%;
+  }
+  @media (min-width: 25em) and (max-width: 37.43em) {
+    font-size: 40%;
+  }
 }
 .background__container {
   width: 100vw;
   height: 100vh;
 
   background-color: $color-main-bg;
+  overflow-x: hidden;
 }
 .main__container {
   position: absolute;
@@ -33,4 +50,8 @@ html {
   background-color: $color-main-bg;
 
   overflow: hidden;
+  @media (max-width: 599px) {
+    height: auto;
+    overflow: auto;
+  }
 }

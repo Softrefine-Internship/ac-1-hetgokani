@@ -8,12 +8,25 @@
   align-items: center;
   gap: 2rem;
 }
+.header {
+  @media (min-width: 3em) and (max-width: 37.43em) {
+    width: 100rem;
+  }
+  @media (min-width: 18em) and (max-width: 31em) {
+    width: 100%;
+  }
+}
 .icon__column__flex {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-  margin: 3.5rem 0 0 0;
+  margin: 3.5rem 0 0 3rem;
+  @media (min-width: 3em) and (max-width: 37.43em) {
+    flex-direction: row;
+    margin: 1.8rem 0 1rem 5rem;
+  }
+
   &--icons {
     color: black;
     width: 2.3rem;
@@ -79,6 +92,14 @@
     gap: 3rem;
     margin-left: 3rem;
   }
+  @media (min-width: 3em) and (max-width: 62.4em) {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  @media (min-width: 18.7em) and (max-width: 37.43em) {
+    flex-direction: row;
+    margin-left: 10rem;
+  }
 }
 .image_button_flex {
   display: flex;
@@ -105,6 +126,12 @@
     &:hover {
       background-color: rgb(238, 234, 234);
       cursor: pointer;
+    }
+    @media (min-width: 37.5em) and (max-width: 49.93em) {
+      font-size: 1.8rem;
+    }
+    @media (min-width: 3em) and (max-width: 37.43em) {
+      font-size: 1.5rem;
     }
   }
   &--image {
@@ -183,6 +210,9 @@
   justify-content: space-between;
   margin: -0.5rem 2rem 0.7rem 0;
   width: 28;
+  @media (min-width: 3em) and (max-width: 34.5em) {
+    width: 50rem;
+  }
 
   &__title {
     font-size: 1.7rem;
@@ -267,4 +297,30 @@
 
 .messages_card {
   z-index: 99999999;
+}
+.phone__view_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // margin-right: -10rem;
+
+  @media (min-width: 34.5em) and (max-width: 200em) {
+    .html {
+      font-size: 20%;
+    }
+    .header__loginarea {
+      display: none;
+    }
+  }
+}
+
+.header__loginarea {
+  @media (min-width: 3em) and (max-width: 34.5em) {
+    margin-right: 0;
+  }
+}
+.messages {
+  @media (min-width: 3em) and (max-width: 34.5em) {
+    width: 60rem;
+  }
 }

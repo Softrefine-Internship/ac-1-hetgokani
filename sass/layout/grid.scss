@@ -2,6 +2,17 @@
   display: grid;
   grid-template-columns: 8% 57% 35%;
   overflow: visible;
+  @media (min-width: 3em) and (max-width: 37.43em) {
+    grid-template-rows: 8% auto auto;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    height: 153rem;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
 
 .icon__column {
@@ -18,12 +29,21 @@
   &__area {
     margin: 3.7rem 4.3rem;
   }
+  @media (max-width: 599px) {
+    height: 80vh;
+  }
+  @media (min-width: 18.7em) and (max-width: 37.43em) {
+    margin-top: -3rem;
+  }
 }
 
 .messages__column {
   background-color: $color-main-bg;
   overflow: visible;
   height: 100vh;
+  @media (max-width: 599px) {
+    height: 100vh;
+  }
 }
 
 .SCROLLABLE-FIX {
@@ -51,6 +71,23 @@
   @include responsive(big-screens) {
     margin-right: 6rem;
     margin-left: -4rem;
+  }
+  @media (min-width: 62.5em) and (max-width: 79em) {
+    margin-right: 2rem;
+    margin-left: -1rem;
+  }
+  @media (min-width: 50em) and (max-width: 62.4em) {
+    margin-right: 2rem;
+    margin-left: -1rem;
+    padding-bottom: 2rem;
+  }
+  @media (min-width: 37.5em) and (max-width: 49.93em) {
+    margin-right: 2rem;
+    margin-left: -1rem;
+    padding-bottom: 2rem;
+  }
+  @media (min-width: 3em) and (max-width: 37.43em) {
+    padding-bottom: 13rem;
   }
 
   &::-webkit-scrollbar {
