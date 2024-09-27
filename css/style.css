@@ -994,6 +994,21 @@ body {
     margin-top: -0.3rem;
   }
 }
+@media (min-width: 84.5em) and (max-width: 156em) {
+  .fixglitch {
+    margin-top: -0.3rem;
+  }
+}
+@media (min-width: 3em) and (max-width: 87em) {
+  .fixglitch {
+    margin-top: 23rem;
+  }
+}
+@media (min-width: 79em) and (max-width: 83em) {
+  .fixglitch {
+    margin-top: 30rem;
+  }
+}
 
 .card5:hover::before,
 .card5:hover::after {
