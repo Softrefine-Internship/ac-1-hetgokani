@@ -148,8 +148,6 @@ html {
   transition: all 0.3s ease;
 }
 .header__icon:hover {
-  transform: rotate(-90deg);
-  color: red;
   cursor: pointer;
 }
 @media (min-width: 3em) and (max-width: 37.43em) {
@@ -236,7 +234,6 @@ html {
 .header__loginarea--plusicon:hover {
   transform: scale(1.1);
   cursor: pointer;
-  color: yellow;
 }
 .header__loginarea--bellicon {
   width: 3rem;
@@ -247,7 +244,6 @@ html {
 .header__loginarea--bellicon:hover {
   transform: rotate(-15deg);
   cursor: pointer;
-  color: rgb(21, 102, 0);
 }
 .header__loginarea__bellsection {
   position: relative;
