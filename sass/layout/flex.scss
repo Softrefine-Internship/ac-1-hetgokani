@@ -21,7 +21,7 @@
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-  margin: 3.5rem 0 0 3rem;
+  margin: 3.5rem 2rem 0 2.5rem;
   @media (min-width: 3em) and (max-width: 37.43em) {
     flex-direction: row;
     margin: 1.8rem 0 1rem 5rem;
@@ -93,7 +93,6 @@
     margin-left: 3rem;
   }
   @media (min-width: 3em) and (max-width: 62.4em) {
-    flex-direction: column;
     gap: 5rem;
   }
   @media (min-width: 18.7em) and (max-width: 37.43em) {
@@ -302,7 +301,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // margin-right: -10rem;
 
   @media (min-width: 34.5em) and (max-width: 200em) {
     .html {

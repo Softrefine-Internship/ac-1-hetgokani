@@ -1,5 +1,5 @@
 .header {
-  margin: 2rem 3rem 2rem 3rem;
+  margin: 2rem 3rem 2rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,7 +15,7 @@
   &__icon {
     width: 4rem;
     height: 4rem;
-    color: black;
+    color: rgb(0, 0, 0);
     margin: 0 0 0 0.7rem;
     transition: all 0.3s ease;
     &:hover {
@@ -29,6 +29,7 @@
     font-size: 3rem;
     margin: 0 0 0 5.5rem;
     font-weight: 700;
+    position: sticky;
 
     @include responsive(phone) {
     }
@@ -42,6 +43,40 @@
     @media (min-width: 3em) and (max-width: 37.43em) {
       margin: 0 0 0 6.5rem;
     }
+    @media (min-width: 62.5em) and (max-width: 75em) {
+      margin: 0 0 0 3rem;
+    }
+    @media (min-width: 37.5em) and (max-width: 43.75em) {
+      margin: 0 0 0 4.5rem;
+    }
+
+    @media (min-width: 43.76em) and (max-width: 50em) {
+      margin: 0 0 0 6rem;
+    }
+
+    @media (min-width: 50.01em) and (max-width: 56.25em) {
+      margin: 0 0 0 4.7rem;
+    }
+
+    @media (min-width: 56.26em) and (max-width: 62.5em) {
+      margin: 0 0 0 6rem;
+    }
+
+    @media (min-width: 62.51em) and (max-width: 68.75em) {
+      margin: 0 0 0 4.5rem;
+    }
+
+    @media (min-width: 68.76em) and (max-width: 75em) {
+      margin: 0 0 0 4.5rem;
+    }
+
+    @media (min-width: 75.01em) and (max-width: 81.25em) {
+      margin: 0 0 0 5.5rem;
+    }
+
+    @media (min-width: 81.26em) and (max-width: 84.38em) {
+      margin: 0 0 0 4rem;
+    }
   }
   &__search {
     position: relative;
@@ -50,11 +85,14 @@
     outline: none;
     height: 2rem;
     border: none;
+
     border-radius: 3rem;
     padding: 2rem 3.5rem;
     width: 30rem;
     appearance: auto;
     margin: 0 0 0 7rem;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     @media (min-width: 3em) and (max-width: 37.43em) {
       margin: 0 0 0 3rem;
     }
@@ -79,6 +117,12 @@
     @media (min-width: 3em) and (max-width: 37.43em) {
       margin: 0 0 0 3rem;
     }
+    @media (min-width: 3em) and (max-width: 62.5em) {
+      margin-top: 0.3rem;
+    }
+    @media (min-width: 63em) and (max-width: 84.5em) {
+      margin-top: 0.3rem;
+    }
   }
   &__loginarea {
     @media (min-width: 34.6em) and (max-width: 37.43em) {
@@ -93,7 +137,7 @@
       stroke: white;
       height: 1.8rem;
       color: white;
-      background-color: black;
+      background-color: rgb(0, 0, 0);
       border-radius: 50%;
       padding: 0.7rem;
       transition: all 0.3s ease;
