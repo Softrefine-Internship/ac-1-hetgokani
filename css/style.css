@@ -48,12 +48,20 @@ html {
     font-size: 40%;
   }
 }
+@media (min-width: 19em) and (max-width: 21.5em) {
+  html {
+    font-size: 30%;
+  }
+}
 
 .background__container {
   width: 100vw;
   height: 100vh;
   background-color: #f3f6fd;
   overflow-x: hidden;
+}
+.background__container::-webkit-scrollbar {
+  display: none;
 }
 
 .main__container {
@@ -62,6 +70,9 @@ html {
   height: 100vh;
   background-color: #f3f6fd;
   overflow: hidden;
+}
+.main__container::-webkit-scrollbar {
+  display: none;
 }
 @media (max-width: 599px) {
   .main__container {
@@ -113,7 +124,7 @@ html {
   width: 2rem;
   height: 1.5rem;
   color: black;
-  fill: rgb(255, 0, 0);
+  fill: rgb(0, 0, 0);
 }
 
 .messages__divider {
@@ -2097,6 +2108,31 @@ body {
     width: 50rem;
   }
 }
+@media (min-width: 34.5em) and (max-width: 37.4em) {
+  .title__icon__flex {
+    width: 80rem;
+  }
+}
+@media (min-width: 34.5em) and (max-width: 36.3em) {
+  .title__icon__flex {
+    width: 75rem;
+  }
+}
+@media (min-width: 30.5em) and (max-width: 34.3em) {
+  .title__icon__flex {
+    width: 65rem;
+  }
+}
+@media (min-width: 21.5em) and (max-width: 24.75em) {
+  .title__icon__flex {
+    width: 50rem;
+  }
+}
+@media (min-width: 26.8em) and (max-width: 30em) {
+  .title__icon__flex {
+    width: 58rem;
+  }
+}
 .title__icon__flex__title {
   font-size: 1.7rem;
   font-family: "Roboto", system-ui;
@@ -2211,7 +2247,7 @@ body {
 
 @media (min-width: 3em) and (max-width: 34.5em) {
   .messages {
-    width: 60rem;
+    width: 100%;
   }
 }
 
@@ -2225,7 +2261,7 @@ body {
     grid-template-rows: 8% auto auto;
     grid-template-columns: 1fr;
     overflow: hidden;
-    height: 153rem;
+    height: 100vh;
     overflow-x: hidden;
   }
   .grid-container::-webkit-scrollbar {
@@ -2250,12 +2286,12 @@ body {
 }
 @media (max-width: 599px) {
   .usercard__column {
-    height: 80vh;
+    height: 100vh;
   }
 }
 @media (min-width: 18.7em) and (max-width: 37.43em) {
   .usercard__column {
-    margin-top: -3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -2330,6 +2366,12 @@ body {
     padding-bottom: 13rem;
   }
 }
+@media (max-width: 599px) {
+  .progress {
+    height: 100vh;
+    padding-bottom: 28rem;
+  }
+}
 .progress::-webkit-scrollbar {
   display: none;
 }
@@ -2338,6 +2380,10 @@ body {
   overflow-y: auto;
 }
 .messages::-webkit-scrollbar {
+  display: none;
+}
+
+.hidden {
   display: none;
 }
 

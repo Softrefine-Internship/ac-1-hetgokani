@@ -19,6 +19,14 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <title>Het Test 4 | Advanced html & css test</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <section class="background__container">
@@ -88,6 +96,7 @@
                   name="person-circle-outline"
                 ></ion-icon>
                 <ion-icon
+                  id="chatboxIcon"
                   class="icon__column__flex--icons"
                   name="chatbox-outline"
                 ></ion-icon>
@@ -134,7 +143,7 @@
             </main>
           </div>
 
-          <div class="usercard__column">
+          <div id="userCardColumn" class="usercard__column">
             <section class="SCROLLABLE-FIX">
               <section class="usercard__column__area">
                 <main class="title">
@@ -486,6 +495,102 @@
                     <!-- ************CARDS CONTENT END *********** -->
                   </div>
                 </article>
+                <article class="cards_flex">
+                  <div class="cards_flex--card3">
+                    <!-- ************CARDS CONTENT START*********** -->
+                    <article class="card3">
+                      <main class="card3__info">
+                        <div class="card3__info--date">July 15,2020</div>
+                        <section class="two__vertical__dots">
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                        </section>
+                      </main>
+                      <h1 class="card3__title">Dashboard</h1>
+                      <h1 class="card3__category">Medical</h1>
+                      <h1 class="card3__progresstitle">Progress</h1>
+                      <main class="card3__progressbar">
+                        <div
+                          class="card3__progressbar--progress"
+                          style="width: 50%"
+                        ></div>
+                      </main>
+                      <h1 class="card3__progresspercentage">50%</h1>
+
+                      <div class="card3__divider"></div>
+
+                      <section class="image_button_flex3">
+                        <div class="image_button_flex3--image3">
+                          <img
+                            class="image_button_flex3--image3--size"
+                            src="images/users/user9.jpg"
+                            alt="user"
+                          />
+                          <img
+                            class="image_button_flex3--image3--size"
+                            src="images/users/user3.jpg"
+                            alt="user"
+                          />
+                          <ion-icon
+                            class="image_button_flex3--plusicon3"
+                            name="add-circle"
+                          ></ion-icon>
+                        </div>
+                        <button class="image_button_flex3--button3" class>
+                          2 Weeks Left
+                        </button>
+                      </section>
+                    </article>
+                    <!-- ************CARDS CONTENT END *********** -->
+                  </div>
+                  <div class="cards_flex--card4">
+                    <!-- ************CARDS CONTENT START*********** -->
+                    <article class="card4">
+                      <main class="card4__info">
+                        <div class="card4__info--date">July 10,2020</div>
+                        <section class="two__vertical__dots">
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                        </section>
+                      </main>
+                      <h1 class="card4__title">Web Designing</h1>
+                      <h1 class="card4__category">Wireframing</h1>
+                      <h1 class="card4__progresstitle">Progress</h1>
+                      <main class="card4__progressbar">
+                        <div
+                          class="card4__progressbar--progress"
+                          style="width: 20%"
+                        ></div>
+                      </main>
+                      <h1 class="card4__progresspercentage">20%</h1>
+
+                      <div class="card4__divider"></div>
+
+                      <section class="image_button_flex4">
+                        <div class="image_button_flex4--image4">
+                          <img
+                            class="image_button_flex4--image4--size"
+                            src="images/users/user5.jpg"
+                            alt="user"
+                          />
+                          <img
+                            class="image_button_flex4--image4--size"
+                            src="images/users/user8.jpg"
+                            alt="user"
+                          />
+                          <ion-icon
+                            class="image_button_flex4--plusicon4"
+                            name="add-circle"
+                          ></ion-icon>
+                        </div>
+                        <button class="image_button_flex4--button4" class>
+                          3 Weeks Left
+                        </button>
+                      </section>
+                    </article>
+                    <!-- ************CARDS CONTENT END *********** -->
+                  </div>
+                </article>
                 <!-- <article class="cards_flex">
                   <div class="cards_flex--card7"></div>
                   <div class="cards_flex--card8"></div>
@@ -732,5 +837,22 @@
         </section>
       </main>
     </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const chatboxIcon = document.getElementById("chatboxIcon");
+        const userCardColumn = document.getElementById("userCardColumn");
+
+        if (chatboxIcon && userCardColumn) {
+          chatboxIcon.addEventListener("click", function () {
+            if (window.innerWidth < 768) {
+              console.log("clicked");
+              userCardColumn.classList.toggle("hidden");
+            }
+          });
+        } else {
+          console.error("not found");
+        }
+      });
+    </script>
   </body>
 </html>

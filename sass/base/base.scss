@@ -34,6 +34,9 @@ html {
   @media (min-width: 25em) and (max-width: 37.43em) {
     font-size: 40%;
   }
+  @media (min-width: 19em) and (max-width: 21.5em) {
+    font-size: 30%;
+  }
 }
 .background__container {
   width: 100vw;
@@ -41,6 +44,9 @@ html {
 
   background-color: $color-main-bg;
   overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 .main__container {
   position: absolute;
@@ -50,6 +56,9 @@ html {
   background-color: $color-main-bg;
 
   overflow: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   @media (max-width: 599px) {
     height: auto;
     overflow: auto;

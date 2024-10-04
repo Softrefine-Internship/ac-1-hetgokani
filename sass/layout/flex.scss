@@ -155,6 +155,7 @@
     }
   }
 }
+
 .messages__title {
   display: flex;
   align-items: center;
@@ -212,7 +213,21 @@
   @media (min-width: 3em) and (max-width: 34.5em) {
     width: 50rem;
   }
-
+  @media (min-width: 34.5em) and (max-width: 37.4em) {
+    width: 80rem;
+  }
+  @media (min-width: 34.5em) and (max-width: 36.3em) {
+    width: 75rem;
+  }
+  @media (min-width: 30.5em) and (max-width: 34.3em) {
+    width: 65rem;
+  }
+  @media (min-width: 21.5em) and (max-width: 24.75em) {
+    width: 50rem;
+  }
+  @media (min-width: 26.8em) and (max-width: 30em) {
+    width: 58rem;
+  }
   &__title {
     font-size: 1.7rem;
     font-family: "Roboto", system-ui;
@@ -319,6 +334,6 @@
 }
 .messages {
   @media (min-width: 3em) and (max-width: 34.5em) {
-    width: 60rem;
+    width: 100%;
   }
 }

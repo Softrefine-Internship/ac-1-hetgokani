@@ -6,7 +6,7 @@
     grid-template-rows: 8% auto auto;
     grid-template-columns: 1fr;
     overflow: hidden;
-    height: 153rem;
+    height: 100vh;
     overflow-x: hidden;
 
     &::-webkit-scrollbar {
@@ -31,10 +31,10 @@
     margin: 3.7rem 4.3rem;
   }
   @media (max-width: 599px) {
-    height: 80vh;
+    height: 100vh;
   }
   @media (min-width: 18.7em) and (max-width: 37.43em) {
-    margin-top: -3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -90,6 +90,10 @@
   @media (min-width: 3em) and (max-width: 37.43em) {
     padding-bottom: 13rem;
   }
+  @media (max-width: 599px) {
+    height: 100vh;
+    padding-bottom: 28rem;
+  }
 
   &::-webkit-scrollbar {
     display: none;
@@ -101,4 +105,7 @@
   &::-webkit-scrollbar {
     display: none;
   }
+}
+.hidden {
+  display: none;
 }

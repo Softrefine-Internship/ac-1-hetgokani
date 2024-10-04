@@ -44,6 +44,11 @@
     gap: 0rem;
     border-radius: 2rem;
   }
+  // @media (min-width: 42.8em) and (max-width: 48em) {
+  //   width: 60rem;
+  //   gap: 0rem;
+  //   border-radius: 2rem;
+  // }
 }
 .card__divider {
   @include responsive(phone) {
