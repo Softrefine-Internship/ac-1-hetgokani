@@ -60,8 +60,13 @@ html {
   background-color: #f3f6fd;
   overflow-x: hidden;
 }
-.background__container::-webkit-scrollbar {
-  display: none;
+@media (max-width: 599px) {
+  .background__container {
+    overflow-x: hidden;
+  }
+  .background__container::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .main__container {
@@ -78,7 +83,14 @@ html {
   .main__container {
     height: auto;
     overflow: auto;
+    overflow-x: hidden;
   }
+  .main__container::-webkit-scrollbar {
+    display: none;
+  }
+}
+.main__container::-webkit-scrollbar {
+  display: none;
 }
 
 .title__name {
@@ -162,6 +174,21 @@ html {
 @media (min-width: 3em) and (max-width: 37.43em) {
   .header__icon {
     display: none;
+  }
+}
+@media (min-width: 1150px) and (max-width: 1270px) {
+  .header__icon {
+    margin: 0 0 0 1rem;
+  }
+}
+@media (min-width: 842px) and (max-width: 998px) {
+  .header__icon {
+    margin: 0 0 0 1rem;
+  }
+}
+@media (min-width: 656px) and (max-width: 799px) {
+  .header__icon {
+    margin: 0 0 0 1rem;
   }
 }
 .header__title {
@@ -261,7 +288,7 @@ html {
   margin: 0 0 0 7rem;
   width: 2rem;
   height: 2rem;
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
 }
 @media (min-width: 3em) and (max-width: 37.43em) {
   .header__searchicon {
@@ -348,6 +375,15 @@ html {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+}
+
+.black-background {
+  background-color: rgba(0, 0, 0, 0.445);
+  color: rgb(255, 255, 255);
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 1rem;
+  border-radius: 50%;
 }
 
 .icon_profile_flex--icon {
@@ -1515,6 +1551,11 @@ body {
     margin-top: 0rem;
   }
 }
+@media (min-height: 600px) and (max-height: 1200px) {
+  .fixglitch {
+    margin-top: 0rem;
+  }
+}
 
 .card5:hover::before,
 .card5:hover::after {
@@ -2057,7 +2098,6 @@ body {
   font-size: 2.2rem;
 }
 .messages__title__text:hover {
-  transform: skew(-10deg);
   cursor: pointer;
 }
 .messages__title__iconflex {
@@ -2070,8 +2110,6 @@ body {
   height: 2.2rem;
 }
 .messages__title__iconflex--searchicon:hover {
-  transform: scale(1.1);
-  color: red;
   cursor: pointer;
 }
 
@@ -2273,6 +2311,22 @@ body {
   background-color: #f3f6fd;
   height: 50rem;
   overflow: auto;
+  margin: 0 1rem 0 0rem;
+}
+@media (min-width: 1150px) and (max-width: 1270px) {
+  .icon__column {
+    margin: 0 1rem 0 0.5rem;
+  }
+}
+@media (min-width: 842px) and (max-width: 998px) {
+  .icon__column {
+    margin: 0 1rem 0 0.5rem;
+  }
+}
+@media (min-width: 656px) and (max-width: 799px) {
+  .icon__column {
+    margin: 0 1rem 0 0.5rem;
+  }
 }
 
 .usercard__column {
@@ -2280,6 +2334,7 @@ body {
   border-radius: 4.3rem;
   height: 100vh;
   overflow: hidden;
+  margin: 0 1rem 0 0rem;
 }
 .usercard__column__area {
   margin: 3.7rem 4.3rem;
@@ -2288,11 +2343,17 @@ body {
   .usercard__column {
     height: 100vh;
   }
+  .usercard__column::-webkit-scrollbar {
+    display: none;
+  }
 }
 @media (min-width: 18.7em) and (max-width: 37.43em) {
   .usercard__column {
     margin-top: 2rem;
   }
+}
+.usercard__column::-webkit-scrollbar {
+  display: none;
 }
 
 .messages__column {
@@ -2304,6 +2365,12 @@ body {
   .messages__column {
     height: 100vh;
   }
+  .messages__column::-webkit-scrollbar {
+    display: none;
+  }
+}
+.messages__column::-webkit-scrollbar {
+  display: none;
 }
 
 .SCROLLABLE-FIX {
@@ -2311,6 +2378,9 @@ body {
   grid-template-rows: auto 1fr;
   height: 100vh;
   padding: 0 0 8rem 0;
+}
+.SCROLLABLE-FIX::-webkit-scrollbar {
+  display: none;
 }
 
 .progress {
@@ -2370,6 +2440,9 @@ body {
   .progress {
     height: 100vh;
     padding-bottom: 28rem;
+  }
+  .progress::-webkit-scrollbar {
+    display: none;
   }
 }
 .progress::-webkit-scrollbar {

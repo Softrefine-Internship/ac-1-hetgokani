@@ -24,6 +24,15 @@
     @media (min-width: 3em) and (max-width: 37.43em) {
       display: none;
     }
+    @media (min-width: 1150px) and (max-width: 1270px) {
+      margin: 0 0 0 1rem;
+    }
+    @media (min-width: 842px) and (max-width: 998px) {
+      margin: 0 0 0 1rem;
+    }
+    @media (min-width: 656px) and (max-width: 799px) {
+      margin: 0 0 0 1rem;
+    }
   }
   &__title {
     font-size: 3rem;
@@ -113,7 +122,7 @@
 
     width: 2rem;
     height: 2rem;
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     @media (min-width: 3em) and (max-width: 37.43em) {
       margin: 0 0 0 3rem;
     }
@@ -195,4 +204,12 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+}
+.black-background {
+  background-color: rgba(0, 0, 0, 0.445);
+  color: rgb(255, 255, 255);
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 1rem;
+  border-radius: 50%;
 }
