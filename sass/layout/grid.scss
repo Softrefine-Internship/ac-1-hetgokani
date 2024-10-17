@@ -59,6 +59,7 @@
   background-color: $color-main-bg;
   overflow: visible;
   height: 100vh;
+  margin-left: -1rem;
   @media (max-width: 599px) {
     height: 100vh;
     &::-webkit-scrollbar {

@@ -88,6 +88,7 @@
             <main class="phone__view_flex">
               <section class="icon__column__flex">
                 <ion-icon
+                  id="homeboxIcon"
                   class="icon__column__flex--icons"
                   name="home-outline"
                 ></ion-icon>
@@ -113,33 +114,19 @@
                   name="settings-outline"
                 ></ion-icon>
               </section>
-
-              <section class="header__loginarea">
-                <ion-icon
-                  class="header__loginarea--plusicon"
-                  name="add-outline"
-                ></ion-icon>
-
-                <!-- *************** BELL SECTION ************** -->
-
-                <div class="header__loginarea__bellsection">
-                  <ion-icon
-                    class="header__loginarea--bellicon"
-                    name="notifications-outline"
-                  ></ion-icon>
-                  <span
-                    ><div class="header__loginarea--notificationdot"></div
-                  ></span>
-                </div>
-                <!-- *************** BREAK LINE ************** -->
-                <div class="header__loginarea__break"></div>
-                <img
-                  class="header__loginarea__userimage"
-                  src="images/users/user3.jpg"
-                  alt="userimage"
+              <div class="header__search">
+                <input
+                  class="header__searchbar"
+                  type="search"
+                  placeholder="Search"
                 />
-                <h1 class="header__loginarea__username">Hira R</h1>
-              </section>
+                <span
+                  ><ion-icon
+                    class="header__searchicon"
+                    name="search-outline"
+                  ></ion-icon
+                ></span>
+              </div>
             </main>
           </div>
 
@@ -841,17 +828,29 @@
       document.addEventListener("DOMContentLoaded", function () {
         const chatboxIcon = document.getElementById("chatboxIcon");
         const userCardColumn = document.getElementById("userCardColumn");
+        const homeboxIcon = document.getElementById("homeboxIcon");
+        const iconColumnFlex = document.querySelector(".icon__column__flex");
 
-        if (chatboxIcon && userCardColumn) {
-          chatboxIcon.addEventListener("click", function () {
+        if (chatboxIcon && userCardColumn && homeboxIcon && iconColumnFlex) {
+          chatboxIcon.addEventListener("click", function handleChatboxClick() {
             if (window.innerWidth < 768) {
-              console.log("clicked");
-              userCardColumn.classList.toggle("hidden");
-              chatboxIcon.classList.toggle("black-background");
+              console.log("Chatbox clicked");
+              userCardColumn.classList.add("hidden");
+              chatboxIcon.classList.add("black-background");
+              iconColumnFlex.classList.add("hide-bg");
+            }
+          });
+
+          homeboxIcon.addEventListener("click", function handleHomeboxClick() {
+            if (window.innerWidth < 768) {
+              console.log("Homebox clicked");
+              userCardColumn.classList.remove("hidden");
+              chatboxIcon.classList.remove("black-background");
+              iconColumnFlex.classList.toggle("hide-bg");
             }
           });
         } else {
-          console.error("not found");
+          console.error("Element not found");
         }
       });
     </script>

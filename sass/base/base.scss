@@ -44,7 +44,11 @@ html {
 
   background-color: $color-main-bg;
   overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   @media (max-width: 599px) {
+    height: 90vh;
     overflow-x: hidden;
     &::-webkit-scrollbar {
       display: none;
@@ -63,14 +67,9 @@ html {
     display: none;
   }
   @media (max-width: 599px) {
+    height: 90vh;
     height: auto;
     overflow: auto;
     overflow-x: hidden;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  &::-webkit-scrollbar {
-    display: none;
   }
 }

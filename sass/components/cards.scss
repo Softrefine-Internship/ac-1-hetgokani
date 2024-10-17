@@ -986,6 +986,12 @@
   @media (min-height: 600px) and (max-height: 1200px) {
     margin-top: 0rem;
   }
+  @media (min-width: 1658px) and (max-width: 2000px) {
+    margin-top: 5rem;
+  }
+  @media (min-width: 2001px) and (max-width: 2700px) {
+    margin-top: 8rem;
+  }
 }
 
 .card5:hover::before,

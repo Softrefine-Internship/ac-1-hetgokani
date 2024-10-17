@@ -8,10 +8,21 @@
     margin: 2rem 3rem 2rem 0rem;
   }
   @media (min-width: 3em) and (max-width: 34.5em) {
-    .header__loginarea {
+    .header__search {
       display: none;
     }
   }
+  @media (min-width: 550px) and (max-width: 600px) {
+    .header__search {
+      display: none;
+    }
+  }
+  @media (min-width: 500px) and (max-width: 552px) {
+    .header__loginarea {
+      margin-right: 20rem;
+    }
+  }
+
   &__icon {
     width: 4rem;
     height: 4rem;
@@ -206,10 +217,23 @@ body {
   font-family: Arial, sans-serif;
 }
 .black-background {
-  background-color: rgba(0, 0, 0, 0.445);
+  background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   width: 2.3rem;
   height: 2.3rem;
   padding: 1rem;
   border-radius: 50%;
+}
+
+.black-background {
+  color: white;
+}
+
+#chatboxIcon.black-background {
+  color: white;
+}
+
+.hide-bg #homeboxIcon {
+  background-color: #ffffff00;
+  color: black;
 }

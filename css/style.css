@@ -60,8 +60,12 @@ html {
   background-color: #f3f6fd;
   overflow-x: hidden;
 }
+.background__container::-webkit-scrollbar {
+  display: none;
+}
 @media (max-width: 599px) {
   .background__container {
+    height: 90vh;
     overflow-x: hidden;
   }
   .background__container::-webkit-scrollbar {
@@ -81,16 +85,11 @@ html {
 }
 @media (max-width: 599px) {
   .main__container {
+    height: 90vh;
     height: auto;
     overflow: auto;
     overflow-x: hidden;
   }
-  .main__container::-webkit-scrollbar {
-    display: none;
-  }
-}
-.main__container::-webkit-scrollbar {
-  display: none;
 }
 
 .title__name {
@@ -157,8 +156,18 @@ html {
   }
 }
 @media (min-width: 3em) and (max-width: 34.5em) {
-  .header .header__loginarea {
+  .header .header__search {
     display: none;
+  }
+}
+@media (min-width: 550px) and (max-width: 600px) {
+  .header .header__search {
+    display: none;
+  }
+}
+@media (min-width: 500px) and (max-width: 552px) {
+  .header .header__loginarea {
+    margin-right: 20rem;
   }
 }
 .header__icon {
@@ -378,12 +387,25 @@ body {
 }
 
 .black-background {
-  background-color: rgba(0, 0, 0, 0.445);
+  background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   width: 2.3rem;
   height: 2.3rem;
   padding: 1rem;
   border-radius: 50%;
+}
+
+.black-background {
+  color: white;
+}
+
+#chatboxIcon.black-background {
+  color: white;
+}
+
+.hide-bg #homeboxIcon {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
 }
 
 .icon_profile_flex--icon {
@@ -1556,6 +1578,16 @@ body {
     margin-top: 0rem;
   }
 }
+@media (min-width: 1658px) and (max-width: 2000px) {
+  .fixglitch {
+    margin-top: 5rem;
+  }
+}
+@media (min-width: 2001px) and (max-width: 2700px) {
+  .fixglitch {
+    margin-top: 8rem;
+  }
+}
 
 .card5:hover::before,
 .card5:hover::after {
@@ -2161,14 +2193,19 @@ body {
     width: 65rem;
   }
 }
-@media (min-width: 21.5em) and (max-width: 24.75em) {
+@media (min-width: 21.5em) and (max-width: 26.75em) {
   .title__icon__flex {
     width: 50rem;
   }
 }
-@media (min-width: 26.8em) and (max-width: 30em) {
+@media (min-width: 26.75em) and (max-width: 30em) {
   .title__icon__flex {
     width: 58rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 544px) {
+  .title__icon__flex {
+    width: 63rem;
   }
 }
 .title__icon__flex__title {
@@ -2283,9 +2320,41 @@ body {
   }
 }
 
-@media (min-width: 3em) and (max-width: 34.5em) {
+@media (min-width: 2px) and (max-width: 600px) {
   .messages {
-    width: 100%;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 550px) {
+  .messages_card {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 544px) {
+  .title__icon__flex {
+    width: 70rem;
+  }
+}
+@media (min-width: 465px) and (max-width: 490px) {
+  .title__icon__flex {
+    width: 65rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+  .title__icon__flex {
+    width: 55rem;
+  }
+}
+@media (min-width: 314px) and (max-width: 344px) {
+  .title__icon__flex {
+    width: 55rem;
+  }
+}
+@media (min-width: 550px) and (max-width: 546px) {
+  .title__icon__flex {
+    width: 65rem;
   }
 }
 
@@ -2360,6 +2429,7 @@ body {
   background-color: #f3f6fd;
   overflow: visible;
   height: 100vh;
+  margin-left: -1rem;
 }
 @media (max-width: 599px) {
   .messages__column {
