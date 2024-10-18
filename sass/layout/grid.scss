@@ -14,12 +14,28 @@
     }
   }
 }
+.col_3 {
+  height: auto;
+  color: white;
+  overflow: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-left: -0.9rem;
+}
+
+@media (max-width: 600px) {
+  .col_3 {
+    width: 92vw;
+    font-size: 100%;
+    margin-left: 2rem;
+  }
+}
 
 .icon__column {
   background-color: $color-main-bg;
   height: 50rem;
   overflow: auto;
   margin: 0 1rem 0 0rem;
+  overflow-x: hidden;
   @media (min-width: 1150px) and (max-width: 1270px) {
     margin: 0 1rem 0 0.5rem;
   }

@@ -37,6 +37,9 @@ html {
   @media (min-width: 19em) and (max-width: 21.5em) {
     font-size: 30%;
   }
+  @media (min-width: 300px) and (max-width: 400px) {
+    font-size: 38%;
+  }
 }
 .background__container {
   width: 100vw;
@@ -72,4 +75,21 @@ html {
     overflow: auto;
     overflow-x: hidden;
   }
+}
+html,
+body {
+  overflow: hidden;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable {
+  overflow: scroll;
 }
