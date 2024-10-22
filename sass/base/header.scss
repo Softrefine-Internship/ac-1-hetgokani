@@ -19,11 +19,11 @@
     }
     .header__searchbar {
       width: 30rem;
-      margin-left: -14rem;
+      margin-left: -15rem;
     }
     .header__searchicon {
       top: 22%;
-      left: -112%;
+      left: -30%;
     }
   }
   @media (min-width: 320px) and (max-width: 400px) {
@@ -36,7 +36,7 @@
     }
     .header__searchicon {
       top: 22%;
-      left: -340%;
+      left: -67%;
     }
   }
 
@@ -138,8 +138,7 @@
     }
 
     &:focus {
-      border: none;
-      appearance: auto;
+      outline: 0.5px solid black;
     }
   }
   &__searchicon {
@@ -253,4 +252,75 @@ body {
 .hide-bg #homeboxIcon {
   background-color: #ffffff00;
   color: black;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .icon__column {
+    width: 100%;
+  }
+
+  .phone__view_flex {
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 368px) {
+  .bottom {
+    display: none;
+  }
+  .space {
+    margin-right: 2.5rem;
+  }
+}
+@media (min-width: 3em) and (max-width: 37.43em) {
+  .icon__column__flex {
+    flex-direction: row;
+    margin: 1.8rem 0 1rem 0;
+  }
+}
+@media (min-width: 420px) and (max-width: 500px) {
+  .icon__column {
+    width: 100%;
+  }
+
+  .phone__view_flex {
+    width: 80%;
+    margin-right: 10rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 358px) {
+  .icon__column {
+    width: 100%;
+  }
+
+  .phone__view_flex {
+    width: 80%;
+    margin-right: 10rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .header .header__searchbar {
+    width: 50rem;
+    margin-left: -10rem;
+  }
+  .header__loginarea {
+    margin-left: -20rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 400px) {
+  .header .header__searchbar {
+    width: 40rem;
+    margin-left: -15rem;
+  }
+}
+@media (min-width: 414px) and (max-width: 552px) {
+  .header__loginarea__username {
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .header__loginarea__username {
+    margin-right: 2rem;
+  }
 }

@@ -189,11 +189,11 @@ body {
   }
   .header .header__searchbar {
     width: 30rem;
-    margin-left: -14rem;
+    margin-left: -15rem;
   }
   .header .header__searchicon {
     top: 22%;
-    left: -112%;
+    left: -30%;
   }
 }
 @media (min-width: 320px) and (max-width: 400px) {
@@ -206,7 +206,7 @@ body {
   }
   .header .header__searchicon {
     top: 22%;
-    left: -340%;
+    left: -67%;
   }
 }
 .header__icon {
@@ -326,8 +326,7 @@ body {
   }
 }
 .header__searchbar:focus {
-  border: none;
-  appearance: auto;
+  outline: 0.5px solid black;
 }
 .header__searchicon {
   position: absolute;
@@ -447,6 +446,72 @@ body {
   color: black;
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+  .icon__column {
+    width: 100%;
+  }
+  .phone__view_flex {
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+@media (min-width: 300px) and (max-width: 368px) {
+  .bottom {
+    display: none;
+  }
+  .space {
+    margin-right: 2.5rem;
+  }
+}
+@media (min-width: 3em) and (max-width: 37.43em) {
+  .icon__column__flex {
+    flex-direction: row;
+    margin: 1.8rem 0 1rem 0;
+  }
+}
+@media (min-width: 420px) and (max-width: 500px) {
+  .icon__column {
+    width: 100%;
+  }
+  .phone__view_flex {
+    width: 80%;
+    margin-right: 10rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 358px) {
+  .icon__column {
+    width: 100%;
+  }
+  .phone__view_flex {
+    width: 80%;
+    margin-right: 10rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  .header .header__searchbar {
+    width: 50rem;
+    margin-left: -10rem;
+  }
+  .header__loginarea {
+    margin-left: -20rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 400px) {
+  .header .header__searchbar {
+    width: 40rem;
+    margin-left: -15rem;
+  }
+}
+@media (min-width: 414px) and (max-width: 552px) {
+  .header__loginarea__username {
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+  .header__loginarea__username {
+    margin-right: 2rem;
+  }
+}
 .icon_profile_flex--icon {
   width: 2rem;
   height: 2rem;
@@ -489,7 +554,7 @@ body {
   margin: 2.4rem 0 -2rem 0;
   width: 25rem;
   height: 23rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   border-radius: 15%;
 }
 @media (min-width: 79.5em) and (max-width: 103em) {
@@ -2977,6 +3042,11 @@ body {
   }
   .progress::-webkit-scrollbar {
     display: none;
+  }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .progress {
+    padding-bottom: 15rem;
   }
 }
 .progress::-webkit-scrollbar {
